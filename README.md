@@ -6,7 +6,7 @@ to automatically respond to messages through Telegram Business Connections.
 The project is designed to be simple, self-hosted, extensible, and privacy-friendly.
 All inference runs locally on your own machine without relying on external AI APIs.
 
-## Featuress
+## Features
 
 - 🤖 Telegram [Secretary Bot](https://core.telegram.org/bots/features#secretary-bots) support (Chat Automation)
 - 🧠 Local LLM inference via Ollama
