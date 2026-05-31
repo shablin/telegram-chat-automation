@@ -33,7 +33,7 @@ All inference runs locally on your own machine without relying on external AI AP
 
 ### 0. Create Telegram bot
 
-Go to [BotFather bot](https:/t.me/BotFather) and follow provided instructions
+Go to [BotFather bot](https://t.me/BotFather) and follow provided instructions
 
 ### 1. Clone the repository
 
