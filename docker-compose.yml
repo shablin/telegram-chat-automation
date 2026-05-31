@@ -1,0 +1,25 @@
+services:
+  ollama:
+    image: mirror.gcr.io/ollama/ollama:latest
+    container_name: ollama_sevice
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+  
+  bot:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile
+    container_name: telegram_bot
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  ollama_data:
